@@ -13,10 +13,13 @@ bot.on('message', function (msg) {
     bot.on('message', function (msg) {
     var chatId = msg.chat.id;
    notes = console.log(msg);
-        bot.sendMessage(chatId, notes, {caption: "I'm a bot!"});
+       
     
         
         
-   })
+   }
+    if(msg.text == 'token')
+    
+     bot.sendMessage(chatId, notes, {caption: "I'm a bot!"});
    
 });
